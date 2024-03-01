@@ -3,6 +3,7 @@ const display = document.getElementById("asdasd");
 let rawVelue = "";
 
 function appendValue(value) {
+    
     if ((value === '*' || value === '/' || value === '+' || value === '-') & rawVelue === '') {
         return
     }
