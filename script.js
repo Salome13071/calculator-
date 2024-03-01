@@ -4,15 +4,15 @@ let rawVelue = "";
 
 function appendValue(value) {
     
-    if ((value === '*' || value === '/' || value === '+' || value === '-') & rawVelue === '') {
+    if ((value === '*' || value === '/' || value === '+' || value === '-') && rawVelue === '') {
         return
     }
-    if (value === '.' & rawVelue === '') {
+    else if (value === '.' && rawVelue === '') {
         rawVelue = '0.';
         display.value = '0.';
         return
     }
-    if (rawVelue === "") {
+    else if (rawVelue === "") {
         display.value = value;
     } else {
         display.value += value;
